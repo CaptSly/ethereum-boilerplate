@@ -29,8 +29,8 @@ function Account() {
 
   if (!isAuthenticated) {
     return (
-      <div style={styles.account} onClick={() => authenticate({ signingMessage: "Hello World!" })}>
-        <p style={styles.text}>Authenticate</p>
+      <div style={styles.account} onClick={() => authenticate({ signingMessage: "Connect to CRAYZ NFT" })}>
+        <p style={styles.text}>Connect</p>
       </div>
     );
   }

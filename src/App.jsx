@@ -18,6 +18,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+
+
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -61,6 +63,7 @@ const App = ({ isServerInfo }) => {
   return (
     <Layout style={{ height: "100vh", overflow: "auto" }}>
       <Router>
+       
         <Header style={styles.header}>
           <Logo />
           <MenuItems />
@@ -69,11 +72,12 @@ const App = ({ isServerInfo }) => {
             <TokenPrice
               address="0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
               chain="eth"
-              image="https://cloudflare-ipfs.com/ipfs/QmXttGpZrECX5qCyXbBQiqgQNytVGeZW5Anewvh2jc4psg/"
+              image="https://img.favpng.com/4/20/5/dollar-sign-united-states-dollar-business-logo-png-favpng-XLDQGsuVu4XDdjxKiXQvuhV5T.jpg"
               size="40px"
-            />
-            <NativeBalance />
-            <Account />
+        /> 
+        
+            <NativeBalance /> 
+            <Account /> 
           </div>
         </Header>
 
@@ -101,32 +105,43 @@ const App = ({ isServerInfo }) => {
             <Route path="/erc20balance">
               <ERC20Balance />
             </Route>
+
+            
+            
+
             <Route path="/onramp">
               <Ramper />
             </Route>
+
             <Route path="/erc20transfers">
               <ERC20Transfers />
             </Route>
+
             <Route path="/nftBalance">
               <NFTBalance />
             </Route>
+
             <Route path="/contract">
               <Contract />
             </Route>
+
             <Route path="/">
               <Redirect to="/quickstart" />
             </Route>
+
             <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
             </Route>
+            
             <Route path="/nonauthenticated">
               <>Please login using the "Authenticate" button</>
             </Route>
           </Switch>
         </div>
       </Router>
+      {/*
       <Footer style={{ textAlign: "center" }}>
-        <Text style={{ display: "block" }}>
+                <Text style={{ display: "block" }}>
           ⭐️ Please star this{" "}
           <a
             href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
@@ -160,13 +175,20 @@ const App = ({ isServerInfo }) => {
           </a>
         </Text>
       </Footer>
+      */}
     </Layout>
   );
 };
 
 export const Logo = () => (
   <div style={{ display: "flex" }}>
+
+
+
+    {/*
     <svg width="60" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      
+    
       <path
         d="M43.6871 32.3986C43.5973 32.4884 43.53 32.5782 43.4402 32.6905C43.53 32.6007 43.5973 32.5109 43.6871 32.3986Z"
         fill="black"
@@ -179,7 +201,10 @@ export const Logo = () => (
         d="M39.7135 25.1249C37.1094 25.1025 34.9991 27.2127 34.9766 29.8169C34.9542 32.4211 37.0645 34.5313 39.6686 34.5538C41.1503 34.5538 42.5647 33.8578 43.4626 32.6905C43.53 32.6007 43.5973 32.4884 43.6871 32.3986C45.1015 30.221 44.4729 27.3025 42.2953 25.9107C41.532 25.3943 40.634 25.1249 39.7135 25.1249Z"
         fill="#B7E803"
       />
-    </svg>
+      
+
+
+    </svg>*/}
   </div>
 );
 

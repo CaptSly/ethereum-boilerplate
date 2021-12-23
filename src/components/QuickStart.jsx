@@ -33,10 +33,18 @@ export default function QuickStart({ isServerInfo }) {
         style={styles.card}
         title={
           <>
-            📝 <Text strong>To-Do List</Text>
+            📝 <Text strong>Welcome to CRAYZ USER Wallet Interface</Text>
           </>
         }
       >
+          <div>This Is a Prototype Development Application for use with</div>
+          <div>ETH, PolyGon, Binance Smart Chain, and Avalanche Testnet Blockchains</div>
+          <br></br>
+          This Online Wallet is for the particular use of Users to Buy, Send, <br></br>
+          Recieve, Swap, Check Balances, & Transfer NFTS
+
+
+          {/*
         <Timeline mode="left" style={styles.timeline}>
           <Timeline.Item dot="📄">
             <Text delete style={styles.text}>
@@ -128,18 +136,28 @@ export default function QuickStart({ isServerInfo }) {
           <Timeline.Item dot="🚀">
             <Text style={styles.text}>BUIDL!!!</Text>
           </Timeline.Item>
+            
         </Timeline>
+          */}
       </Card>
+
+
+
       <div>
         <Card
           style={styles.card}
           title={
             <>
-              💣 <Text strong>Starting Local Chain (optional)</Text>
+              💵 <Text strong>Buying Crypto</Text>
+              <br></br>
+              <div>The Current Provider For Crypto Currencies Fiat Onramp will set limits, 
+                          <br></br>however its on a blockchain case-by-case basis</div>
             </>
           }
         >
           <Timeline mode="left" style={styles.timeline}>
+                        
+            {/*
             <Timeline.Item dot="💿">
               <Text style={styles.text}>
                 Install{" "}
@@ -166,19 +184,20 @@ export default function QuickStart({ isServerInfo }) {
             <Timeline.Item dot="✅" style={styles.text}>
               <Text>
                 Open the 📄<Text strong> Contract</Text> tab
-              </Text>
-            </Timeline.Item>
+            </Text> 
+            </Timeline.Item>*/}
           </Timeline>
         </Card>
         <Card
           style={{ marginTop: "10px", ...styles.card }}
           title={
             <>
-              📡 <Text strong> Connecting your Local Chain to the Moralis DB</Text>
+              📡 <Text strong> This Prototype uses only ETH(Mainnet) and Testnet of ETH, BSC/POLY, and AVAX</Text>
             </>
           }
         >
           <Timeline mode="left" style={styles.timeline}>
+            {/*
             <Timeline.Item dot="💿">
               <Text style={styles.text}>
                 Download{" "}
@@ -197,7 +216,7 @@ export default function QuickStart({ isServerInfo }) {
               <Text style={styles.text}>
                 Add contract events you want to watch: <Text code>npm run watch:events</Text>
               </Text>
-            </Timeline.Item>
+            </Timeline.Item> */}
           </Timeline>
         </Card>
       </div>
